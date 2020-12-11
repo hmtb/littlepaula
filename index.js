@@ -1,26 +1,29 @@
 const prompt = require('prompt');
 const axios = require('axios');
+const { has} = require('lodash')
 
 // start the prompt
 prompt.start();
+
+// add nfc tags
+const config = require('./config.json')
 
 function waitForInput() {
   prompt.get(['key'], (err, result) => {
     if (err) {
         throw err;
     }
- 
-    if(result.key == '0015154948')
-      axios.get('http://localhost:5005/Wohnzimmer/spotify/now/spotify:track:3NIDOSThELMihLSOMZcL4k').then(function (response) {
-      // handle success
-      console.log(response.data.status);
-    })
-
-    if(result.key == '0015192722')
-      axios.get('http://localhost:5005/Wohnzimmer/spotify/now/spotify:track:1hkC9kHG980jEfkTmQYB7t').then(function (response) {
+    if(has(config,result.key)) {
+        console.log('send', result.key);
+        axios.get('http://localhost:5005/Wohnzimmer/spotify/now/' + config[result.key].uri).then(function (response) {
+        // handle success
         console.log(response.data.status);
-    })
-
+      }).catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+    }
+    // wait for next input
     waitForInput()
 });
 }
