@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const prompt = require('prompt');
 const axios = require('axios');
 const { has} = require('lodash')
