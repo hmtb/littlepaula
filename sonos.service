@@ -2,7 +2,7 @@
 Description=sonos
 
 [Service]
-ExecStart=/home/mher/projects/node-sonos-http-api/index.js
+ExecStart=/home/mher/projects/node-sonos-http-api/server.js
 Restart=always
 User=nobody
 # Note Debian/Ubuntu uses 'nogroup', RHEL/Fedora uses 'nobody'
