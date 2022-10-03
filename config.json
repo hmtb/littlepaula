@@ -1,22 +1,25 @@
 {
-  "0016034363": {
-    "uri": "spotify:track:6Sh4ATk1ZZ66qoy972zXfy",
-    "name": "Tip Tap"
-  },
-  "0015154948": {
-    "uri": "spotify:track:5HX4b5VVLGYZTq479lFESS",
-    "name": "hoer mal wie die regenwuermer husten"
-  },
-  "0015192722": {
-    "uri": "spotify:track:37pygNz4pjL0TC66WWC6Ar",
-    "name": "Backe Backe Kuchen"
-  },
-  "0015166038": {
-    "uri": "spotify:track:7gcKoI9KokClK9ZUjNFgZa",
-    "name": "in der weihnachtsbaeckerei"
-  },
-  "001601001": {
-    "uri": "spotify:track:2mIKK5sy9onKz74q5mku1Z",
-    "name": "was muessen das fuer baume sein"
+  "speaker": "Wohnzimmer",
+  "tags": {
+    "0016034363": {
+      "uri": "spotify:track:6Sh4ATk1ZZ66qoy972zXfy",
+      "name": "Tip Tap"
+    },
+    "0015154948": {
+      "uri": "spotify:track:5HX4b5VVLGYZTq479lFESS",
+      "name": "hoer mal wie die regenwuermer husten"
+    },
+    "0015192722": {
+      "uri": "spotify:track:37pygNz4pjL0TC66WWC6Ar",
+      "name": "Backe Backe Kuchen"
+    },
+    "0015166038": {
+      "uri": "spotify:track:7gcKoI9KokClK9ZUjNFgZa",
+      "name": "in der weihnachtsbaeckerei"
+    },
+    "001601001": {
+      "uri": "spotify:track:2mIKK5sy9onKz74q5mku1Z",
+      "name": "was muessen das fuer baume sein"
+    }
   }
 }

@@ -14,15 +14,17 @@ function waitForInput() {
     if (err) {
         throw err;
     }
-    if(has(config,result.key)) {
-        console.log('send', result.key);
-        axios.get('http://localhost:5005/Wohnzimmer/spotify/now/' + config[result.key].uri).then(function (response) {
+    if(has(config.tags,result.key)) {
+        console.log('send', result.key, config.tags[result.key]);
+        axios.get(`http://localhost:5005/${config.speaker}/spotify/now/` + config.tags[result.key].uri).then(function (response) {
         // handle success
         console.log(response.data.status);
       }).catch(function (error) {
         // handle error
         console.log(error);
       })
+    } else {
+      console.log("tag not found");
     }
     // wait for next input
     waitForInput()
