@@ -1,7 +1,5 @@
 # Sonos Tag Controller
 
-
-
 ## setup
 
 - fork and config keys
