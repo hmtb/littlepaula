@@ -17,10 +17,13 @@ function waitForInput() {
     if (Date.now() < lastCommand + 5000) {
       console.log('Only once Paula');
     }
+    else if (has(config.tags[result.key].command)) {
+        const commandResponse = await axios.get(`http://localhost:5005/${config.speaker}/${config.tags[result.key].command}`);
+        console.log("command: ", config.tags[result.key].command);
+    }
     else if (has(config.tags, result.key)) {
       console.log('play', result.key, config.tags[result.key]);
-
-
+      
       try {
         const clearResponse = await axios.get(`http://localhost:5005/${config.speaker}/clearqueue`);
         console.log("clear queue", clearResponse.data.status);
