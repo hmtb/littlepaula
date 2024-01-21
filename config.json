@@ -64,6 +64,8 @@
     "0001930114": {
       "uri": "spotify:track:2RKCTpbXBrovYbczbcIKr5",
       "name": "gruene Froesche"
-    }
+    },
+    "0000337507": {
+      "command": "pause"
   }
 } 
